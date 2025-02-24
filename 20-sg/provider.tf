@@ -7,14 +7,12 @@ terraform {
   }
 
   backend "s3" {
-  bucket         = "81s-learningdevops"
-  key            = "expense-sg"
-  region         = "us-east-1"
-  dynamodb_table = "81s-locking"
+    bucket         = "81s-learningdevops"
+    key            = "expense-sg"
+    region         = "us-east-1"
+    dynamodb_table = "81s-locking"
   }
 }
-
-
 
 provider "aws" {
   # Configuration options
